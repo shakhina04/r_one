@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalabe=0">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+</head>
+<body>
+<div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__rows">
+                    <div class="header__row">
+                            Freelancer
+                    </div>
+                    <div class="header__row">
+                        <button @click="onClick_h1">
+                            Home
+                        </button>
+                        <button @click="onClick_h2">
+                            About
+                        </button>
+                        <button @click="onClick_h3">
+                            Services
+                        </button>
+                        <button @click="onClick_h4">
+                            Reviews
+                        </button>
+                        <button @click="onClick_h5">
+                            Prices
+                        </button>
+                        <button>
+                            Order
+                        </button>
+                    </div>
+                    <div class="header__row">
+                        <div v-bind:style="{right:elHidden}" class="header__element">
+                            <button @click="onClick_h1">
+                                Home
+                            </button>
+                            <button @click="onClick_h2">
+                                About
+                            </button>
+                            <button @click="onClick_h3">
+                                Services
+                            </button>
+                            <button @click="onClick_h4">
+                                Reviews
+                            </button>
+                            <button @click="onClick_h5">
+                                Prices
+                            </button>
+                            <button>
+                                Order
+                            </button>
+                        </div>
+                        <button @click="burgerOnClick" class="header__burger">
+                            <hr v-bind:style="{transform:stick1}">
+                            <hr v-bind:style="{transform:stick2}">
+                            <hr v-bind:style="{transform:stick3}">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+            <section class="section">
+                <div class="section__container">
+                    <article class="article">
+                        <div class="article__container">
+                            <div class="article__title">
+                                <h1>
+                                    Hi! I am Aziz Isomov
+                                </h1>
+                                <span>
+                                    Service Line helps you to turn your complex multisite, multivendor imaging environment into a uniform and balanced operation.
+                                </span>
+                                <button>
+                                    Get Started
+                                </button>
+                            </div>
+                            <img src="img/face.svg" alt="">
+                        </article>
+                    <article class="article">
+                        <article class="article__container">
+                            <div class="article__items">
+                                <div class="article__item">
+                                    <div class="article__element">
+                                        <h2>258+</h2>
+                                    </div>
+                                    <div class="article__element">
+                                        <h3>Positive Feedback</h3>
+                                        <span>From our clients</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="article__item">
+                                    <div class="article__element">
+                                        <h2>590k</h2>
+                                    </div>
+                                    <div class="article__element">
+                                        <h3>Project Complete</h3>
+                                        <span>My Achievement</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="article__item">
+                                    <div class="article__element">
+                                        <h2>28+</h2>
+                                    </div>
+                                    <div class="article__element">
+                                        <h3>Years of Experience</h3>
+                                        <span>High quailified</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__container">
+                    <article class="article">
+                        <div class="article__container">
+                            <div class="article__title">
+                                <span>
+                                    <span>best services</span>
+                                    <h2>Benefits You get when using our services</h2>
+                                </span>
+                                <span>While we can customize your needs plan to suit your needs, most clients schedule regular interior services</span>
+                            </div>
+                            <div class="article__items">
+                                <div class="article__item">
+                                    <div class="article__element">
+                                        <img src="img/sec2_art1(1).svg" alt="">
+                                    </div>
+                                    <div class="article__element">
+                                        <h2>Best Quality</h2>
+                                        <span>It starts with our fun and easy project questionnaire where you’ll provide details.</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="article__item">
+                                    <div class="article__element">
+                                        <img src="img/sec2_art1(2).svg" alt="">
+                                    </div>
+                                    <div class="article__element">
+                                        <h2>Excellent Design</h2>
+                                        <span>After getting matched, your designer will message with you to collaborate on ideas.</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="article__item">
+                                    <div class="article__element">
+                                        <img src="img/sec2_art1(3).svg" alt="">
+                                    </div>
+                                    <div class="article__element">
+                                        <h2>guaranteed Shipping</h2>
+                                        <span>Designer incorporates feedback into the final room design and layout with.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="article__container">
+                            <div class="article__title">
+                                <h2>What we have for you</h2>
+                                <span>Some of the services we provide to meet your needs</span>
+                            </div>
+                            <div class="article__items">
+                                <div class="article__columns">
+                                    <div class="article__column">
+                                        <div class="article__item">
+                                            <div class="article__element">
+                                                <img src="img/Ellipse 185.svg" alt="">
+                                            </div>
+                                            <div class="article__element">
+                                                <h2>Corporate Web Design</h2>
+                                                <span>A marketing tool that is a complete solution 
+                                                    for bringing your company within reach of 
+                                                    your target market; Wrapped up in great 
+                                                    UI/UX design and informative contents 
+                                                    about your products or services.</span>
+                                            </div>
+                                        </div>
+                                        <div class="article__item">
+                                            <div class="article__element">
+                                                <img src="img/Ellipse 185.svg" alt="">
+                                            </div>
+                                            <div class="article__element">
+                                                <h2>Development  System</h2>
+                                                <span>Sell more products using a user-friendly 
+                                                    checkout flow and simplify your sales operation with our powerful CMS. Online 
+                                                    payment, membership to invoice, and 
+                                                    label printing are ready in the box.</span>
+                                            </div>
+                                        </div>
+                                        <div class="article__item">
+                                            <div class="article__element">
+                                                <img src="img/Ellipse 185.svg" alt="">
+                                            </div>
+                                            <div class="article__element">
+                                                <h2>SEO Service</h2>
+                                                <span>Make your company's website more 
+                                                    competitive on Google's search result by 
+                                                    using your best keywords set. We also 
+                                                    analyze and audit your current site 
+                                                    before optimizing it.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article__column">
+                                        <div class="article__item">
+                                            <div class="article__element">
+                                                <img src="img/Ellipse 185.svg" alt="">
+                                            </div>
+                                            <div class="article__element">
+                                                <h2>Ilustration Design</h2>
+                                                <span>Illustrations can be used to give a complete 
+                                                    picture of the content of a work. we are 
+                                                    ready to help you create good and 
+                                                    meaningful illustrations for you</span>
+                                            </div>
+                                        </div>
+                                        <div class="article__item">
+                                            <div class="article__element">
+                                                <img src="img/Ellipse 185.svg" alt="">
+                                            </div>
+                                            <div class="article__element">
+                                                <h2>Web Maintenance Service</h2>
+                                                <span>Our mission is to make your web project last
+                                                for years. We want you to have peace-of-
+                                                mind while running your web project knowing 
+                                                that our support is behind it, so you can focus 
+                                                on what you</span>
+                                            </div>
+                                        </div>
+                                        <div class="article__item">
+                                            <div class="article__element">
+                                                <img src="img/Ellipse 185.svg" alt="">
+                                            </div>
+                                            <div class="article__element">
+                                                <h2>UI/UX Design</h2>
+                                                <span>UI design on a product aims to beautify the 
+                                                    appearance of the product. While the UX 
+                                                    design is designed to provide a pleasant 
+                                                    experience when using the product.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="article__container">
+                            <div class="article__title">
+                                <h2>Some of my Creative work</h2>
+                                <span>An all electric vehicle offering an estimated 20 plus miles of range
+                                    per charge for an affordable price is how we define but passion
+                                    and persistence are the principles used to accomplish it</span>
+                            </div>
+                            <div class="article__items">
+                                <div class="article__columns">
+                                    <div class="article__column">
+                                        <div class="article__item">
+                                            <a target="_blank" href="https://aziz1236.github.io/project_2/">
+                                                <img src="img/image_original 1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article__item">
+                                            <a target="_blank" href="https://aziz1236.github.io/project_1/">
+                                                <img src="img/image_original 2.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="article__column">
+                                        <div class="article__item">
+                                            <a target="_blank" href="https://aziz1236.github.io/project_3/">
+                                                <img src="img/image_original3.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article__item">
+                                            <a target="_blank" href="https://aziz1236.github.io/project_4/">
+                                                <img src="img/image_original4.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="article__container">
+                            <div class="article__title">
+                                <span>Our Pricing</span>
+                                <h2>available prices and cheap
+                                    packages</h2>
+                            </div>
+                            <div class="article__items">
+                                <div class="article__item">
+                                    <div class="article__element">
+                                        <h3>Basic</h3>
+                                        <span>
+                                            <h2>$10</h2>
+                                            <div>/project</div>
+                                        </span>
+                                        <ul>
+                                            <li>
+                                                <img src="img/gal.svg" alt="">
+                                                Cross Browser web-site
+                                            </li>
+                                            <li>
+                                                <img src="img/gal.svg" alt="">
+                                                Readable code
+                                            </li>
+                                            <li>
+                                                <img src="img/gal.svg" alt="">
+                                                only 1-3 pages
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button>Get Started</button>
+                                </div>
+                                <div class="article__item">
+                                    <div class="article__element">
+                                        <h3>Premium</h3>
+                                        <span>
+                                            <h2>$15</h2>
+                                            <div>/project</div>
+                                        </span>
+                                        <ul>
+                                            <li>
+                                                <img src="img/gal.svg" alt="">
+                                                Cross Browser web-site
+                                            </li>
+                                            <li>
+                                                <img src="img/gal.svg" alt="">
+                                                Readable code
+                                            </li>
+                                            <li>
+                                                <img src="img/gal.svg" alt="">
+                                                With adaptive
+                                            </li>
+                                            <li>
+                                                <img src="img/gal.svg" alt="">
+                                                only 1-3 pages
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button>Get Started</button>
+                                </div>
+                                <div class="article__item">
+                                    <div class="article__element">
+                                        <h3>Super</h3>
+                                        <span>
+                                            <h2>$25</h2>
+                                            <div>/project</div>
+                                        </span>
+                                        <ul>
+                                            <li>
+                                                <img src="img/gal.svg" alt="">
+                                                Cross Browser web-site
+                                            </li>
+                                            <li>
+                                                <img src="img/gal.svg" alt="">
+                                                Readable code
+                                            </li>
+                                            <li>
+                                                <img src="img/gal.svg" alt="">
+                                                With adaptive
+                                            </li>
+                                            <li>
+                                                <img src="img/gal.svg" alt="">
+                                                3 or more pages
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button>Get Started</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </article>
+                </div>
+            </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__rows">
+                    <div class="footer__row">
+                        <div class="footer__title">
+                            <h2>Cartrix</h2>
+                            <span>An all Design Tools offering an estimated 20 plus
+                                Design of range per charge for an affordable price
+                                is how we define but passion and persistence</span>
+                        </div>
+                        <div class="footer__items">
+                            <a href="#">
+                                <img src="img/Facebook.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/Instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/Twitter.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/Youtube.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__row">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Our Design
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Adobe illustration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Commercial Design
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Web Development
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Offers Finance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Current Deals
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Mistery Discount
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    College Discount
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Design Tools
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Dealer Location
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Build Car Price
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Search Inventory
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Help Center
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Payment Services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    FAQ Community
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Terms Condition
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <span>
+                    Copyright Cartrix 2021 All Right Reserved
+                </span>
+            </div>
+        </footer>
+    </div>
+<script src="js/vue.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
